@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediSlot | My Appointments</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="nav-logo" href="index.html#home">
+      <div class="nav-logo-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+      </div>
+      <span class="nav-logo-text">MediSlot</span>
+    </a>
+    <div class="nav-links">
+      <a class="nav-link" href="index.html#home">Find Doctors</a>
+      <a class="nav-link active" href="appointments.html">My Appointments</a>
+      <a class="btn btn-primary" style="margin-left:8px;text-decoration:none" href="book-now.html">Book Now</a>
+    </div>
+    <button class="hamburger" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/>
+      </svg>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a class="mobile-link" href="index.html#home">Find Doctors</a>
+    <a class="mobile-link" href="appointments.html">My Appointments</a>
+  </div>
+</nav>
+<!-- â•â• SCREEN: APPOINTMENTS â•â• -->
+<div class="screen" id="appointments">
+  <div class="appts">
+    <h1 class="appts-title">My Appointments</h1>
+    <p class="appts-sub">Manage your upcoming and past appointments</p>
+    <div class="tabs"><span class="tab active">Upcoming (1)</span><span class="tab">Past (3)</span></div>
+    <div class="card appt-card"><div class="appt-inner"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=200&amp;h=200&amp;fit=crop&amp;auto=format" alt="Dr. Priya Sharma" class="appt-img"><div class="appt-body"><div class="appt-header"><div><div class="appt-name">Dr. Priya Sharma</div><div class="appt-spec">Cardiology</div></div><span class="badge badge-teal">Sample</span></div><div class="appt-meta"><span>&#128197; Sep 25, 2026</span><span>&#128336; 10:00 AM</span><span>&#127973; In-person</span><span>&#128176; &#8377;800</span></div></div></div></div>
+    <div id="panel-past">
+      <div class="card appt-card">
+        <div class="appt-inner">
+          <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=200&h=200&fit=crop&auto=format" alt="Dr. Meera Iyer" class="appt-img" />
+          <div class="appt-body">
+            <div class="appt-header">
+              <div><div class="appt-name">Dr. Meera Iyer</div><div class="appt-spec">Pediatrics</div></div>
+              <span class="badge badge-green">Completed</span>
+            </div>
+            <div class="appt-meta"><span>ðŸ“… Oct 18, 2024</span><span>ðŸ• 11:00 AM</span><span>ðŸ¥ In-person</span><span>ðŸ’° â‚¹500</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="card appt-card">
+        <div class="appt-inner">
+          <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=200&h=200&fit=crop&auto=format" alt="Dr. Kiran Nair" class="appt-img" />
+          <div class="appt-body">
+            <div class="appt-header">
+              <div><div class="appt-name">Dr. Kiran Nair</div><div class="appt-spec">General</div></div>
+              <span class="badge badge-green">Completed</span>
+            </div>
+            <div class="appt-meta"><span>ðŸ“… Sep 5, 2024</span><span>ðŸ• 3:00 PM</span><span>ðŸ“¹ Video</span><span>ðŸ’° â‚¹350</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="card appt-card">
+        <div class="appt-inner">
+          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=200&h=200&fit=crop&auto=format" alt="Dr. Priya Sharma" class="appt-img" />
+          <div class="appt-body">
+            <div class="appt-header">
+              <div><div class="appt-name">Dr. Priya Sharma</div><div class="appt-spec">Cardiology</div></div>
+              <span class="badge badge-red">Cancelled</span>
+            </div>
+            <div class="appt-meta"><span>ðŸ“… Aug 22, 2024</span><span>ðŸ• 10:00 AM</span><span>ðŸ¥ In-person</span><span>ðŸ’° â‚¹800</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
