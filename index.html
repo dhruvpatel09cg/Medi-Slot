@@ -1,0 +1,360 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediSlot â€“ Doctor Appointment Booking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  </head>
+<body>
+
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="nav-logo" href="#home">
+      <div class="nav-logo-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+      </div>
+      <span class="nav-logo-text">MediSlot</span>
+    </a>
+    <div class="nav-links">
+      <a class="nav-link active" href="#home">Find Doctors</a>
+      <a class="nav-link" href="#appointments">My Appointments</a>
+      <a class="btn btn-primary" style="margin-left:8px;text-decoration:none" href="#booking">Book Now</a>
+    </div>
+    <button class="hamburger" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/>
+      </svg>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a class="mobile-link active" href="#home">Find Doctors</a>
+    <a class="mobile-link" href="#appointments">My Appointments</a>
+  </div>
+</nav>
+
+<!-- â•â• SCREEN: HOME â•â• -->
+<div class="screen active" id="home">
+  <section class="hero">
+    <div class="container">
+      <p class="hero-eyebrow">Multi-specialty clinic</p>
+      <h1 class="hero-title">Find &amp; Book a Doctor<br>in 60 Seconds</h1>
+      <p class="hero-sub">Search by specialty or doctor name. Check real-time availability and book your slot online â€” no phone calls needed.</p>
+      <div class="hero-search">
+        <div class="hero-input-wrap">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <input class="hero-input" id="searchInput" type="text" placeholder="Search doctor or specialtyâ€¦" />
+        </div>
+        <a class="hero-search-btn btn" href="#doctors" style="text-decoration:none">Search</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="stat-num">500+</div><div class="stat-lbl">Doctors</div></div>
+        <div><div class="stat-num">50k+</div><div class="stat-lbl">Patients</div></div>
+        <div><div class="stat-num">98%</div><div class="stat-lbl">Satisfaction</div></div>
+        <div><div class="stat-num">24/7</div><div class="stat-lbl">Support</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="specialties">
+    <div class="container">
+      <h2 class="section-title">Browse by Specialty</h2>
+      <div class="chips">
+        <a class="chip" href="#doctors">All</a>
+        <a class="chip" href="#doctors">ðŸ«€ Cardiology</a>
+        <a class="chip" href="#doctors">ðŸ§  Neurology</a>
+        <a class="chip" href="#doctors">ðŸ§¬ Dermatology</a>
+        <a class="chip" href="#doctors">ðŸ¦´ Orthopedics</a>
+        <a class="chip" href="#doctors">ðŸ‘¶ Pediatrics</a>
+        <a class="chip" href="#doctors">ðŸ©º General</a>
+        <a class="chip" href="#doctors">ðŸ¦· Dentistry</a>
+        <a class="chip" href="#doctors">ðŸ‘ï¸ Ophthalmology</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="doctors" id="doctors">
+    <div class="container">
+      <div class="doctors-header">
+        <h2 class="section-title" id="docCount" style="margin-bottom:0">6 Doctors Available</h2>
+      </div>
+      <div class="doctors-grid"><a class="card doc-card" href="#profile" aria-label="View Dr. Priya Sharma profile">
+ <div class="doc-card-top"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=200&amp;h=200&amp;fit=crop&amp;auto=format" alt="Dr. Priya Sharma" class="doc-avatar"><div style="flex:1;min-width:0"><div class="doc-name">Dr. Priya Sharma</div><div class="doc-spec">Cardiology</div><div class="doc-hosp">Apollo Hospital, Mumbai</div></div></div>
+ <div class="doc-meta"><span style="color:#f59e0b">&#9733;</span><strong>4.9</strong><span>(312)</span>&nbsp;&middot;&nbsp;<strong>14 yrs</strong> exp&nbsp;&middot;&nbsp;&#8377;<strong>800</strong></div>
+ <div class="doc-footer"><span class="badge badge-teal">Next: Today</span><span class="btn btn-primary" style="padding:8px 18px;font-size:13px">Book</span></div></a><a class="card doc-card" href="#profile" aria-label="View Dr. Arjun Mehta profile">
+ <div class="doc-card-top"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=200&amp;h=200&amp;fit=crop&amp;auto=format" alt="Dr. Arjun Mehta" class="doc-avatar"><div style="flex:1;min-width:0"><div class="doc-name">Dr. Arjun Mehta</div><div class="doc-spec">Neurology</div><div class="doc-hosp">Fortis Hospital, Delhi</div></div></div>
+ <div class="doc-meta"><span style="color:#f59e0b">&#9733;</span><strong>4.8</strong><span>(241)</span>&nbsp;&middot;&nbsp;<strong>18 yrs</strong> exp&nbsp;&middot;&nbsp;&#8377;<strong>1200</strong></div>
+ <div class="doc-footer"><span class="badge badge-teal">Next: Tomorrow</span><span class="btn btn-primary" style="padding:8px 18px;font-size:13px">Book</span></div></a><a class="card doc-card" href="#profile" aria-label="View Dr. Ananya Bose profile">
+ <div class="doc-card-top"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=200&amp;h=200&amp;fit=crop&amp;auto=format" alt="Dr. Ananya Bose" class="doc-avatar"><div style="flex:1;min-width:0"><div class="doc-name">Dr. Ananya Bose</div><div class="doc-spec">Dermatology</div><div class="doc-hosp">Manipal Hospital, Bengaluru</div></div></div>
+ <div class="doc-meta"><span style="color:#f59e0b">&#9733;</span><strong>4.7</strong><span>(198)</span>&nbsp;&middot;&nbsp;<strong>9 yrs</strong> exp&nbsp;&middot;&nbsp;&#8377;<strong>600</strong></div>
+ <div class="doc-footer"><span class="badge badge-teal">Next: Today</span><span class="btn btn-primary" style="padding:8px 18px;font-size:13px">Book</span></div></a><a class="card doc-card" href="#profile" aria-label="View Dr. Ravi Patel profile">
+ <div class="doc-card-top"><img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=200&amp;h=200&amp;fit=crop&amp;auto=format" alt="Dr. Ravi Patel" class="doc-avatar"><div style="flex:1;min-width:0"><div class="doc-name">Dr. Ravi Patel</div><div class="doc-spec">Orthopedics</div><div class="doc-hosp">Max Healthcare, Pune</div></div></div>
+ <div class="doc-meta"><span style="color:#f59e0b">&#9733;</span><strong>4.9</strong><span>(428)</span>&nbsp;&middot;&nbsp;<strong>22 yrs</strong> exp&nbsp;&middot;&nbsp;&#8377;<strong>1000</strong></div>
+ <div class="doc-footer"><span class="badge badge-teal">Next: Thu, Nov 28</span><span class="btn btn-primary" style="padding:8px 18px;font-size:13px">Book</span></div></a><a class="card doc-card" href="#profile" aria-label="View Dr. Meera Iyer profile">
+ <div class="doc-card-top"><img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=200&amp;h=200&amp;fit=crop&amp;auto=format" alt="Dr. Meera Iyer" class="doc-avatar"><div style="flex:1;min-width:0"><div class="doc-name">Dr. Meera Iyer</div><div class="doc-spec">Pediatrics</div><div class="doc-hosp">Rainbow Children's Hospital, Chennai</div></div></div>
+ <div class="doc-meta"><span style="color:#f59e0b">&#9733;</span><strong>4.8</strong><span>(563)</span>&nbsp;&middot;&nbsp;<strong>11 yrs</strong> exp&nbsp;&middot;&nbsp;&#8377;<strong>500</strong></div>
+ <div class="doc-footer"><span class="badge badge-teal">Next: Today</span><span class="btn btn-primary" style="padding:8px 18px;font-size:13px">Book</span></div></a><a class="card doc-card" href="#profile" aria-label="View Dr. Kiran Nair profile">
+ <div class="doc-card-top"><img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=200&amp;h=200&amp;fit=crop&amp;auto=format" alt="Dr. Kiran Nair" class="doc-avatar"><div style="flex:1;min-width:0"><div class="doc-name">Dr. Kiran Nair</div><div class="doc-spec">General</div><div class="doc-hosp">KIMS Hospital, Hyderabad</div></div></div>
+ <div class="doc-meta"><span style="color:#f59e0b">&#9733;</span><strong>4.6</strong><span>(187)</span>&nbsp;&middot;&nbsp;<strong>7 yrs</strong> exp&nbsp;&middot;&nbsp;&#8377;<strong>350</strong></div>
+ <div class="doc-footer"><span class="badge badge-teal">Next: Tomorrow</span><span class="btn btn-primary" style="padding:8px 18px;font-size:13px">Book</span></div></a></div>
+      <div id="noResults" style="display:none;text-align:center;padding:4rem 0;color:var(--s400)">
+        <div style="font-size:48px;margin-bottom:12px">ðŸ”</div>
+        <p style="font-size:18px;font-weight:500">No doctors found</p>
+        <p style="font-size:14px;margin-top:6px">Try a different specialty or name</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- â•â• SCREEN: PROFILE â•â• -->
+<div class="screen" id="profile">
+  <div class="profile">
+    <div class="breadcrumb">
+      <a href="#home">Find Doctors</a>
+      <span>â€º</span><span id="profBc" style="color:var(--s600)">Dr. Priya Sharma</span>
+    </div>
+    <div class="profile-grid">
+      <div>
+        <div class="card profile-card">
+          <div class="profile-top">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=200&amp;h=200&amp;fit=crop&amp;auto=format" alt="Dr. Priya Sharma" class="profile-avatar" />
+            <div>
+              <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:4px">
+                <h1 class="profile-name" id="profName">Dr. Priya Sharma</h1>
+                <span class="badge badge-teal">Verified âœ“</span>
+              </div>
+              <p class="profile-spec" id="profSpec">Cardiology</p>
+              <p class="profile-hosp" id="profHosp">Apollo Hospital, Mumbai</p>
+              <div class="profile-stats">
+                <div><div class="profile-stat-val" id="profExp">14 yrs</div><div class="profile-stat-lbl">Experience</div></div>
+                <div><div class="profile-stat-val">2,400+</div><div class="profile-stat-lbl">Patients</div></div>
+                <div><div class="profile-stat-val" id="profRating">4.9 &#9733;</div><div class="profile-stat-lbl">Rating</div></div>
+                <div><div class="profile-stat-val" id="profFee">&#8377;800</div><div class="profile-stat-lbl">Fee</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card section-card">
+          <h2>About</h2>
+          <p id="profBio" style="color:var(--s600);font-size:15px;line-height:1.75">Dr. Priya Sharma is a board-certified cardiologist with 14 years of experience treating complex heart conditions. She specializes in interventional cardiology and heart failure management.</p>
+        </div>
+        <div class="card section-card">
+          <h2>Available Timings</h2>
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+            <div style="width:8px;height:8px;border-radius:50%;background:var(--teal);flex-shrink:0"></div>
+            <span id="profTimings" style="color:var(--s600);font-size:15px">Mon &ndash; Fri, 10:00 AM &ndash; 5:00 PM</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px">
+            <div style="width:8px;height:8px;border-radius:50%;background:#f59e0b;flex-shrink:0"></div>
+            <span style="color:var(--s500);font-size:14px">Next available: <strong id="profNext" style="color:var(--s900)">Today</strong></span>
+          </div>
+        </div>
+        <div class="card section-card">
+          <h2 id="profRevTitle">Patient Reviews (312)</h2>
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px">
+            <span id="profRatingBig" style="font-family:'Outfit',sans-serif;font-weight:800;font-size:44px;color:var(--s900)">4.9</span>
+            <div>
+              <div id="profStars" style="color:#f59e0b;font-size:20px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <div style="color:var(--s400);font-size:13px">out of 5</div>
+            </div>
+          </div>
+          <div class="review-item"><div class="review-header"><div><span class="review-name">Sunita Rao</span><span class="review-date">Nov 2024</span></div><span class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div><p class="review-text">Excellent doctor! Very thorough and patient. Made me feel at ease immediately.</p></div><div class="review-item"><div class="review-header"><div><span class="review-name">Deepak Gupta</span><span class="review-date">Oct 2024</span></div><span class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div><p class="review-text">Very knowledgeable and explained everything clearly. Highly recommended.</p></div><div class="review-item"><div class="review-header"><div><span class="review-name">Preethi Kumar</span><span class="review-date">Oct 2024</span></div><span class="review-stars">&#9733;&#9733;&#9733;&#9733;</span></div><p class="review-text">Good consultation. Wait time was minimal and the staff was very helpful.</p></div>
+        </div>
+      </div>
+      <div>
+        <div class="card booking-sidebar">
+          <h3 class="sidebar-title">Book Appointment</h3>
+          <p style="font-size:11px;color:var(--s400);font-weight:600;text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px">Consultation Type</p>
+          <div class="consult-types" id="sbConsult">
+            <span class="consult-type">&#127973; In-person</span>
+            <span class="consult-type">&#128249; Video</span>
+          </div>
+          <div class="sidebar-summary">
+            <div class="sidebar-row"><span>Consultation Fee</span><strong id="sbFee">&#8377;800</strong></div>
+            <div class="sidebar-row"><span>Next Slot</span><strong id="sbNext" style="color:var(--teal-dark)">Today</strong></div>
+          </div>
+          <a class="btn btn-primary btn-lg" href="#booking">Check Availability â†’</a>
+          <p class="sidebar-note">Free cancellation up to 2 hrs before</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- â•â• SCREEN: BOOKING â•â• -->
+<div class="screen" id="booking">
+  <div class="booking">
+    <div class="breadcrumb">
+      <a href="#profile" id="bkBc">Dr. Priya Sharma</a>
+      <span>â€º</span><span style="color:var(--s600)">Book Slot</span>
+    </div>
+    <div class="card doc-strip">
+      <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=200&amp;h=200&amp;fit=crop&amp;auto=format" alt="Dr. Priya Sharma" class="strip-avatar" />
+      <div>
+        <div class="strip-name" id="bkDocName">Dr. Priya Sharma</div>
+        <div class="strip-sub" id="bkDocSub">Cardiology &middot; &#8377;800</div>
+      </div>
+    </div>
+    <div class="booking-grid">
+      <!-- Calendar -->
+      <div class="card cal">
+        <div class="cal-nav">
+          <button class="cal-btn">â€¹</button>
+          <span class="cal-month" id="calLabel">September 2026</span>
+          <button class="cal-btn">â€º</button>
+        </div>
+        <div class="cal-weekdays">
+          <div class="cal-wd">Su</div><div class="cal-wd">Mo</div><div class="cal-wd">Tu</div>
+          <div class="cal-wd">We</div><div class="cal-wd">Th</div><div class="cal-wd">Fr</div><div class="cal-wd">Sa</div>
+        </div>
+        <div class="cal-days"><div></div><div></div><button class="cal-day" type="button">1</button><button class="cal-day" type="button">2</button><button class="cal-day" type="button">3</button><button class="cal-day" type="button">4</button><button class="cal-day" type="button">5</button><button class="cal-day" type="button">6</button><button class="cal-day" type="button">7</button><button class="cal-day" type="button">8</button><button class="cal-day" type="button">9</button><button class="cal-day" type="button">10</button><button class="cal-day" type="button">11</button><button class="cal-day" type="button">12</button><button class="cal-day" type="button">13</button><button class="cal-day" type="button">14</button><button class="cal-day" type="button">15</button><button class="cal-day" type="button">16</button><button class="cal-day" type="button">17</button><button class="cal-day" type="button">18</button><button class="cal-day" type="button">19</button><button class="cal-day" type="button">20</button><button class="cal-day" type="button">21</button><button class="cal-day" type="button">22</button><button class="cal-day" type="button">23</button><button class="cal-day" type="button">24</button><button class="cal-day selected" type="button">25</button><button class="cal-day" type="button">26</button><button class="cal-day" type="button">27</button><button class="cal-day" type="button">28</button><button class="cal-day" type="button">29</button><button class="cal-day" type="button">30</button></div>
+      </div>
+      <!-- Slots + Form -->
+      <div style="display:flex;flex-direction:column;gap:18px">
+        <div class="card slots">
+          <div class="slots-title">Available Slots &ndash; September 25</div><div class="slots-grid"><button class="slot" type="button">9:00 AM</button><button class="slot" type="button">10:00 AM</button><button class="slot unavail" type="button" disabled>11:00 AM</button><button class="slot" type="button">12:00 PM</button><button class="slot unavail" type="button" disabled>2:00 PM</button><button class="slot" type="button">3:00 PM</button><button class="slot" type="button">4:00 PM</button><button class="slot" type="button">5:00 PM</button></div>
+        </div>
+        <div class="card patient-form">
+          <h3>Patient Details</h3>
+          <div style="display:flex;gap:8px;margin-bottom:16px">
+            <span class="consult-type">&#127973; In-person</span>
+            <span class="consult-type">&#128249; Video</span>
+          </div>
+          <div class="form-field">
+            <label class="form-label">Full Name</label>
+            <input class="form-input" id="patName" type="text" placeholder="e.g. Rahul Verma" />
+          </div>
+          <div class="form-field">
+            <label class="form-label">Phone Number</label>
+            <input class="form-input" id="patPhone" type="tel" placeholder="+91 98765 43210" />
+          </div>
+          <div class="form-field">
+            <label class="form-label">Reason for Visit (optional)</label>
+            <textarea class="form-textarea" id="patReason" placeholder="Brief descriptionâ€¦"></textarea>
+          </div>
+          <button class="btn btn-primary btn-lg" style="width:100%;opacity:.45;cursor:not-allowed" disabled>Fill in Details to Book</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- â•â• SCREEN: CONFIRMATION â•â• -->
+<div class="screen" id="confirmation">
+  <div class="confirm">
+    <div class="confirm-check">
+      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+    <h1 class="confirm-title">Booking Confirmed!</h1>
+    <p class="confirm-sub">Your appointment has been booked successfully. A confirmation will be sent to your phone.</p>
+    <div class="card confirm-card">
+      <div class="confirm-doc-row">
+        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=200&amp;h=200&amp;fit=crop&amp;auto=format" alt="Dr. Priya Sharma" class="confirm-avatar" />
+        <div>
+          <div class="confirm-doc-name" id="cfName">Dr. Priya Sharma</div>
+          <div class="confirm-doc-spec" id="cfSpec">Cardiology</div>
+          <div class="confirm-doc-hosp" id="cfHosp">Apollo Hospital, Mumbai</div>
+        </div>
+      </div>
+      <div class="confirm-details">
+        <div><div class="confirm-lbl">Date</div><div class="confirm-val" id="cfDate">September 25, 2026</div></div>
+        <div><div class="confirm-lbl">Time</div><div class="confirm-val" id="cfTime">10:00 AM</div></div>
+        <div><div class="confirm-lbl">Type</div><div class="confirm-val" id="cfType">In-person</div></div>
+        <div><div class="confirm-lbl">Fee</div><div class="confirm-val" id="cfFee">&#8377;800</div></div>
+      </div>
+      <div class="confirm-id">
+        <span style="font-size:22px">ðŸŽ«</span>
+        <div>
+          <div class="confirm-id-lbl">Booking ID</div>
+          <div class="confirm-id-val" id="cfId">MS-000000</div>
+        </div>
+      </div>
+    </div>
+    <div class="reminder">
+      <div class="reminder-title">âš ï¸ Reminders</div>
+      <ul>
+        <li>Arrive 10 minutes before your appointment</li>
+        <li>Bring a valid photo ID and insurance card</li>
+        <li>Free cancellation up to 2 hours before the slot</li>
+      </ul>
+    </div>
+    <div class="confirm-actions">
+      <a class="btn btn-primary btn-lg" href="#appointments">View My Appointments</a>
+      <a class="btn btn-primary btn-lg" href="#home"</a>
+    </div>
+  </div>
+</div>
+
+<!-- â•â• SCREEN: APPOINTMENTS â•â• -->
+<div class="screen" id="appointments">
+  <div class="appts">
+    <h1 class="appts-title">My Appointments</h1>
+    <p class="appts-sub">Manage your upcoming and past appointments</p>
+    <div class="tabs"><span class="tab active">Upcoming (1)</span><span class="tab">Past (3)</span></div>
+    <div class="card appt-card"><div class="appt-inner"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=200&amp;h=200&amp;fit=crop&amp;auto=format" alt="Dr. Priya Sharma" class="appt-img"><div class="appt-body"><div class="appt-header"><div><div class="appt-name">Dr. Priya Sharma</div><div class="appt-spec">Cardiology</div></div><span class="badge badge-teal">Sample</span></div><div class="appt-meta"><span>&#128197; Sep 25, 2026</span><span>&#128336; 10:00 AM</span><span>&#127973; In-person</span><span>&#128176; &#8377;800</span></div></div></div></div>
+    <div id="panel-past">
+      <div class="card appt-card">
+        <div class="appt-inner">
+          <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=200&h=200&fit=crop&auto=format" alt="Dr. Meera Iyer" class="appt-img" />
+          <div class="appt-body">
+            <div class="appt-header">
+              <div><div class="appt-name">Dr. Meera Iyer</div><div class="appt-spec">Pediatrics</div></div>
+              <span class="badge badge-green">Completed</span>
+            </div>
+            <div class="appt-meta"><span>ðŸ“… Oct 18, 2024</span><span>ðŸ• 11:00 AM</span><span>ðŸ¥ In-person</span><span>ðŸ’° â‚¹500</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="card appt-card">
+        <div class="appt-inner">
+          <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=200&h=200&fit=crop&auto=format" alt="Dr. Kiran Nair" class="appt-img" />
+          <div class="appt-body">
+            <div class="appt-header">
+              <div><div class="appt-name">Dr. Kiran Nair</div><div class="appt-spec">General</div></div>
+              <span class="badge badge-green">Completed</span>
+            </div>
+            <div class="appt-meta"><span>ðŸ“… Sep 5, 2024</span><span>ðŸ• 3:00 PM</span><span>ðŸ“¹ Video</span><span>ðŸ’° â‚¹350</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="card appt-card">
+        <div class="appt-inner">
+          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=200&h=200&fit=crop&auto=format" alt="Dr. Priya Sharma" class="appt-img" />
+          <div class="appt-body">
+            <div class="appt-header">
+              <div><div class="appt-name">Dr. Priya Sharma</div><div class="appt-spec">Cardiology</div></div>
+              <span class="badge badge-red">Cancelled</span>
+            </div>
+            <div class="appt-meta"><span>ðŸ“… Aug 22, 2024</span><span>ðŸ• 10:00 AM</span><span>ðŸ¥ In-person</span><span>ðŸ’° â‚¹800</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Cancel modal -->
+<div class="modal-overlay" id="cancelModal">
+  <div class="modal">
+    <div class="modal-icon">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+    </div>
+    <div class="modal-title">Cancel Appointment?</div>
+    <p class="modal-sub">Are you sure you want to cancel? This action cannot be undone.</p>
+    <div class="modal-actions">
+      <button class="btn btn-outline btn-lg">Keep It</button>
+      <button class="btn btn-danger btn-lg">Yes, Cancel</button>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
+
+
